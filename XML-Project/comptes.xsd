@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="banque" type="banque"/>
+
+  <xs:element name="compte" type="compte"/>
+
+  <xs:complexType name="banque">
+    <xs:sequence>
+      <xs:element name="comptes" type="compte" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="compte">
+    <xs:sequence>
+      <xs:element name="solde" type="xs:double"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:long"/>
+  </xs:complexType>
+</xs:schema>
+

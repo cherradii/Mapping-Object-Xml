@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<banque>
+    <comptes id="1">
+        <solde>8800.22</solde>
+    </comptes>
+    <comptes id="2">
+        <solde>4900.0</solde>
+    </comptes>
+    <comptes id="3">
+        <solde>5700.0</solde>
+    </comptes>
+</banque>
